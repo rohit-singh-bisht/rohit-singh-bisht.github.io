@@ -1300,6 +1300,10 @@ span.value a {
 /*================== 05 End about section css ==================  */
 
 /*================== 06 start education section css ==================  */
+
+.education_main_wrapper{
+    margin-top: 30px;
+}
 .education_main_wrapper:after {
     content: "";
     position: absolute;
@@ -1788,6 +1792,15 @@ h3.education_place {
     z-index: 0;
     margin-bottom: 30px;
 }
+
+.port_services_setions .port_services_box img{
+    width: 80px;
+}
+
+.port_services_setions .port_services_box .mid{
+    width: 120px;
+}
+
 .port_services_setions .port_services_box:hover {
     box-shadow: 0px 12px 29px 0px rgb(0, 0, 0, 0.09);
 	border-color: #00000000;
@@ -1861,6 +1874,7 @@ h2.project_heading:after {
     position: absolute;
     left: 40px;
     bottom: 20px;
+    right: 40px;
     color: white;
     z-index: 1;
 	-webkit-transition: all 0.3s;
@@ -1889,6 +1903,9 @@ h2.project_heading:after {
     -moz-transition: all 700ms ease;
     -ms-transition: all 700ms ease;
     -o-transition: all 700ms ease;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #dedede;
 }
 .port_project_gallery .grid-item:hover .grid_img img{
 	transform: scale(1.2,1.2);
@@ -1904,6 +1921,12 @@ h2.project_heading:after {
     display: inline-block;
     width: 100%;
 }
+
+.port_project_gallery .gallery_grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .port_project_gallery .gallery_nav ul {
     list-style: none;
     padding: 0 15px;
@@ -2341,7 +2364,7 @@ h2.project_heading:after {
     box-shadow: 0 0 77px -4px #0000001a;
     padding: 49px 50px 45px 50px;
     position: relative;
-    margin: -295px auto 0px auto;
+    margin: 0px auto 0px auto;
 }
 .port_contact_form .form-control {
     background: #ff000000;

@@ -1,13 +1,3 @@
-/*--------------------- Copyright (c) 2019 -----------------------
-[Master Javascript]
-
-Project: Portfolio Responsive HTML Template
-Version: 1.0.6
-Assigned to: ThemeForest
-------------------------------------------------------------------
-
-
-------------------------------------------------------------------*/
 
 (function ($) {
 	"use strict";
@@ -33,13 +23,11 @@ Assigned to: ThemeForest
 			this.banner_typingtext();
 			this.typed_js();
 			this.about_opendetails();
-			this.isotop_gallery();
 			this.circle_progressbar();
 			this.magnific_popup();
 			this.testimonial_slider();
 			this.popup_video();			
-			this.responsor_slider();			
-			this.world_map();
+			this.responsor_slider();
 			this.contact_form();
 			this.goto_top();
 			this.page_scroll();
@@ -169,25 +157,6 @@ Assigned to: ThemeForest
 	},
 	
 	/*------------------------------------------------------------------*/ 
-	// Start isotop gallery js 
-		isotop_gallery: function() {
-			if($('.gallery_grid').length > 0){
-				$('.gallery_grid').isotope({
-						itemSelector: '.grid-item',
-						filter: '*'
-					});
-					$('.port_project_gallery > .gallery_nav > ul > li').on( 'click', 'a', function() {
-						// filter button click
-						var filterValue = $( this ).attr('data-filter');
-						$('.gallery_grid').isotope({ filter: filterValue });
-
-						//active class added
-						$('a').removeClass('gallery_active');
-						$(this).addClass('gallery_active');
-					});
-			}
-		},
-	/*------------------------------------------------------------------*/ 
 	
 	// magnifiv popup for project gallery
 	magnific_popup: function() {
@@ -304,138 +273,6 @@ Assigned to: ThemeForest
 	// circle progress bar js start
 	/*------------------------------------------------------------------*/ 
 	
-	// start map js
-	world_map: function() {
-		if($('#world-map').length > 0){
-			$(function(){
-				$('#world-map').vectorMap({
-				map: 'world_mill',
-				scaleColors: ['#C8EEFF', '#0071A4'],
-				normalizeFunction: 'polynomial',
-				hoverOpacity: 0.9,
-				hoverColor: false,
-				zoomOnScrollSpeed:1, //default value is 3
-				 zoomStep:1.1, //default value is 1.6
-					markerStyle: {
-									initial:{
-												fill: '#00c8da',
-												stroke: '#556d91'
-											},
-									hover: {
-												stroke: '#00c8da',
-												fill:'#ffc454',
-												"stroke-width": 2,
-												cursor: 'pointer'
-											},
-									selected:{
-												fill: 'blue'
-											},
-									selectedHover: {
-													}
-								},
-					regionStyle:{
-									initial: {
-												fill: '#e3eaef',
-												"fill-opacity": 1,
-												stroke: 'none',
-												"stroke-width": 0,
-												"stroke-opacity": 1
-											},
-									hover: {
-												"fill-opacity": 0.8,
-												cursor: 'pointer'
-											},
-									selected:{
-												fill: 'yellow'
-											},
-									selectedHover: {
-													}
-								},
-					backgroundColor: '#fff',
-					markers: [
-						{
-							latLng: [31.230391, 121.473701],
-							name: 'Shanghai',
-						},
-						{
-							latLng: [39.904202, 116.407394],
-							name: 'Beijing',
-						},
-						{
-							latLng: [28.70406, 77.102493],
-							name: 'Delhi',
-						},
-						{
-							latLng: [6.524379, 3.379206],
-							name: 'Lagos',
-						},
-						{
-							latLng: [39.343357, 117.361649],
-							name: 'Tianjin',
-						},
-						{
-							latLng: [24.860735, 67.001137],
-							name: 'Karachi',
-						},
-						{
-							latLng: [41.00824, 28.978359],
-							name: 'Istanbul',
-						},
-						{
-							latLng: [35.689487, 139.691711],
-							name: 'Tokyo',
-						},
-						{
-							latLng: [23.12911, 113.264381],
-							name: 'Guangzhou',
-						},
-						{
-							latLng: [19.075983, 72.877655],
-							name: 'Mumbai',
-						},
-						{
-							latLng: [40.7127837, -74.0059413],
-							name: 'New York',
-						},
-						{
-							latLng: [34.052235, -118.243683],
-							name: 'Los Angeles',
-						},
-						{
-							latLng: [41.878113, -87.629799],
-							name: 'Chicago',
-						},
-						{
-							latLng: [29.760427, -95.369804],
-							name: 'Houston',
-						},
-						{
-							latLng: [33.448376, -112.074036],
-							name: 'Phoenix',
-						},
-						{
-							latLng: [51.507351, -0.127758],
-							name: 'London',
-						},
-						{
-							latLng: [48.856613, 2.352222],
-							name: 'Paris',
-						},
-						{
-							latLng: [55.755825, 37.617298],
-							name: 'Moscow',
-						},
-						{
-							latLng: [40.416775, -3.70379],
-							name: 'Madrid',
-						},
-					]
-				  });
-				});
-		}
-	},
-	// end map js
-	/*------------------------------------------------------------------*/ 
 	
 	// start video popup js
 	popup_video: function() {
